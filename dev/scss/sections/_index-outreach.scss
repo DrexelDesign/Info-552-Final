@@ -30,19 +30,20 @@
             grid-template-columns: 60% auto;
         }
 
-        @include xxl{
+        @include xxl {
             grid-template-columns: 70% auto;
         }
 
-        #left-side{
+        #left-side {
 
-            #left-top{
+            #left-top {
                 padding-bottom: 24px;
-                @include md{
-                     display: grid;
-                     grid-template-columns: 50% auto;
-                     padding-bottom: 48px;
-                     
+
+                @include md {
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    padding-bottom: 48px;
+
                 }
             }
         }
@@ -132,9 +133,9 @@
                         height: 50vh;
                         margin-bottom: 0px;
                     }
-                  
 
-                    .twitter-card{
+
+                    .twitter-card {
                         display: flex;
                         align-items: center;
                         padding: 16px;
@@ -142,20 +143,22 @@
                         border-radius: 8px;
                         margin-bottom: 16px;
 
-                        .twitter-logo{
+                        .twitter-logo {
                             margin-right: 16px;
                         }
-                        p{
+
+                        p {
                             font-size: rem-calc(14);
                         }
 
-                        ul{
+                        ul {
                             display: flex;
                             justify-content: flex-end;
 
-                            li{
+                            li {
                                 margin-left: 16px;
-                                img{
+
+                                img {
                                     width: 20px;
                                 }
                             }
@@ -167,9 +170,9 @@
 
         }
 
-        #right-side{
+        #right-side {
 
-            .card{
+            .card {
                 background-color: var(--grey);
                 padding: 16px;
                 border-radius: 8px;
@@ -179,17 +182,17 @@
                 display: flex;
                 align-items: center;
 
-                aside{
+                aside {
                     display: flex;
                     align-items: center;
 
-                    img{
+                    img {
                         width: 100%;
                         margin-bottom: 16px;
 
-                        @include xxl{
+                        @include xxl {
                             width: 50px;
-                            
+
                         }
                     }
                 }

@@ -1,0 +1,29 @@
+/* =============
+    Board-Info
+============= */ 
+
+#board{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". board .";
+    padding: 24px 0;
+
+    @include md{
+        padding: 48px 0;
+    }
+
+    @include lg{
+        padding: 56px 0;
+    }
+
+    @include xxl{
+        padding: 64px 0;
+    }
+
+    >div{
+        grid-area: board;
+
+
+    }
+
+}

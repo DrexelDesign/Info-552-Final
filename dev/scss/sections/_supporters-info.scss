@@ -1,0 +1,160 @@
+/* =============
+    Supporters-Info
+============= */
+
+#supporters {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". Supporters .";
+    padding: 24px 0;
+
+    @include md {
+        // grid-template-columns: 15vw auto 15vw;
+        padding: 48px 0;
+    }
+
+    @include lg {
+        // grid-template-columns: 25vw auto 25vw;
+        padding: 56px 0;
+    }
+
+    @include xxl {
+        grid-template-columns: auto 1440px auto;
+        padding: 64px 0;
+    }
+
+    >div {
+        grid-area: Supporters;
+
+        #support-header {
+            display: flex;
+
+            i {
+                color: var(--blue);
+                margin-right: 16px;
+                font-size: rem-calc(30);
+            }
+        }
+
+        #top-sponsors {
+            display: grid;
+            gap: 16px;
+
+            @include md {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            li {
+                background-color: var(--lightBlue);
+                padding: 16px;
+                color: var(--darkBlue);
+
+                img {
+                    height: 200px;
+                    margin-bottom: 16px;
+                }
+
+                h2 {
+                    font-weight: 400;
+                }
+
+                hr {
+                    border: none;
+                    height: 1px;
+                    background-color: var(--darkBlue);
+                }
+            }
+        }
+
+        #sponsors {
+           
+            margin-top: 24px;
+
+            @include md {
+                margin-top: 48px;
+            }
+
+            @include lg {
+                margin-top: 56px;
+            }
+
+            @include xxl {
+                margin-top: 64px;
+            }
+
+            ul{
+                display: grid;
+                grid-template-columns: 50% auto;
+                gap: 16px;
+
+
+                @include md {
+                   
+                    grid-template-columns: repeat(3, 1fr);
+                }
+
+                @include lg {
+                   
+                    grid-template-columns: repeat(4, 1fr);
+                }
+
+                li {
+                    background-color: var(--grey);
+                    padding: 16px;
+    
+                    h2 {
+                        font-weight: 400;
+                        color: var(--blue)
+                    }
+    
+                    hr {
+                        border: none;
+                        height: 1px;
+                        background-color: var(--blue);
+                    }
+                }
+            }
+
+            
+        }
+
+        #support-thanks {
+            margin-top: 24px;
+
+            @include md {
+                margin-top: 48px;
+            }
+        
+            @include lg {
+                margin-top: 56px;
+            }
+        
+            @include xxl {
+                margin-top: 64px;
+            }
+
+
+
+            >div {
+                display: flex;
+
+                i {
+                    color: var(--blue);
+                    margin-right: 16px;
+                    font-size: rem-calc(30);
+                }
+            }
+
+            p {
+                margin-bottom: 24px;
+
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+
+    }
+
+}

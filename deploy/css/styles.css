@@ -390,6 +390,22 @@ h1, h2, h3, h4, p {
 /* =============
     Buttons
 ============= */
+.red-button {
+  background-color: var(--red);
+  color: var(--cream);
+  padding: 8px 16px;
+  transition: 0.25s;
+  display: inline-block;
+  margin-top: 16px;
+}
+.red-button:hover, .red-button:active {
+  background-color: var(--cream);
+  color: var(--red);
+}
+.red-button i {
+  margin-left: 8px;
+}
+
 /* =============
     Forms
 ============= */
@@ -515,13 +531,118 @@ textarea {
   color: var(--red);
 }
 
+.list-item-active {
+  color: var(--cream) !important;
+}
 .list-item-active a:link, .list-item-active a:visited {
   color: var(--cream) !important;
 }
 .list-item-active a:link:hover, .list-item-active a:link:active, .list-item-active a:visited:hover, .list-item-active a:visited:active {
+  color: var(--cream) !important;
+}
+.list-item-active:hover, .list-item-active:active {
+  color: var(--cream) !important;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: var(--cream);
+  padding: 14px 0 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+}
+@media (min-width: 1024px) {
+  .dropdown .dropbtn {
+    padding: 14px 16px;
+    color: var(--blue);
+  }
+}
+.dropdown h2 {
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .dropdown .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px;
+    gap: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .dropdown .row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.dropdown .row ul {
+  display: block !important;
+  height: 100%;
+  padding: 16px;
+}
+.dropdown .row ul li {
+  margin-top: 16px;
+}
+.dropdown .row ul li a {
+  color: var(--blue) !important;
+}
+.dropdown .row ul li a:hover, .dropdown .row ul li a:active {
+  color: var(--cream) !important;
+}
+.dropdown .row .column {
+  padding: 16px;
+}
+.dropdown .row .column > div {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.dropdown .row #column-2 > div {
+  background-image: url("../img/menu/mega-1.jpg");
+}
+.dropdown .row #column-3 {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .dropdown .row #column-3 {
+    display: block;
+  }
+}
+.dropdown .row #column-3 > div {
+  background-image: url("../img/menu/mega-2.jpg");
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: var(--white);
+  transition: 0.25s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--lightBlue);
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.dropdown-content .header {
+  background: var(--blue);
+  padding: 16px;
   color: var(--cream);
 }
 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+/* Clear floats after the columns */
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 /* =============
     Header
 ============= */
@@ -1164,4 +1285,146 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
   #contact > div aside {
     height: 70vh;
   }
+}
+
+/* =============
+    Supporters-Info
+============= */
+#supporters {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". Supporters .";
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  #supporters {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #supporters {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #supporters {
+    grid-template-columns: auto 1440px auto;
+    padding: 64px 0;
+  }
+}
+#supporters > div {
+  grid-area: Supporters;
+}
+#supporters > div #support-header {
+  display: flex;
+}
+#supporters > div #support-header i {
+  color: var(--blue);
+  margin-right: 16px;
+  font-size: 1.875rem;
+}
+#supporters > div #top-sponsors {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #supporters > div #top-sponsors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+#supporters > div #top-sponsors li {
+  background-color: var(--lightBlue);
+  padding: 16px;
+  color: var(--darkBlue);
+}
+#supporters > div #top-sponsors li img {
+  height: 200px;
+  margin-bottom: 16px;
+}
+#supporters > div #top-sponsors li h2 {
+  font-weight: 400;
+}
+#supporters > div #top-sponsors li hr {
+  border: none;
+  height: 1px;
+  background-color: var(--darkBlue);
+}
+#supporters > div #sponsors {
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  #supporters > div #sponsors {
+    margin-top: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  #supporters > div #sponsors {
+    margin-top: 56px;
+  }
+}
+@media (min-width: 1440px) {
+  #supporters > div #sponsors {
+    margin-top: 64px;
+  }
+}
+#supporters > div #sponsors ul {
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #supporters > div #sponsors ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  #supporters > div #sponsors ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#supporters > div #sponsors ul li {
+  background-color: var(--grey);
+  padding: 16px;
+}
+#supporters > div #sponsors ul li h2 {
+  font-weight: 400;
+  color: var(--blue);
+}
+#supporters > div #sponsors ul li hr {
+  border: none;
+  height: 1px;
+  background-color: var(--blue);
+}
+#supporters > div #support-thanks {
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  #supporters > div #support-thanks {
+    margin-top: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  #supporters > div #support-thanks {
+    margin-top: 56px;
+  }
+}
+@media (min-width: 1440px) {
+  #supporters > div #support-thanks {
+    margin-top: 64px;
+  }
+}
+#supporters > div #support-thanks > div {
+  display: flex;
+}
+#supporters > div #support-thanks > div i {
+  color: var(--blue);
+  margin-right: 16px;
+  font-size: 1.875rem;
+}
+#supporters > div #support-thanks p {
+  margin-bottom: 24px;
+}
+#supporters > div #support-thanks p span {
+  font-weight: 600;
 }

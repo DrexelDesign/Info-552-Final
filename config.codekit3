@@ -7,8 +7,16 @@
       "uuidString" : "451A1469-D6E6-4D70-91C5-115B5A5CB6D8"
     }
   ],
-  "creatorBuild" : "34408",
+  "creatorBuild" : "34418",
   "files" : {
+    "\/deploy\/board.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/board.html",
+      "oF" : 0
+    },
     "\/deploy\/contact.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -167,6 +175,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/menu\/mega-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 106170,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/menu\/mega-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/menu\/mega-2.jpg" : {
+      "ft" : 16384,
+      "iS" : 70127,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/menu\/mega-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/outreach\/funding-icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -296,6 +330,45 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/supporters\/bruce.jpg" : {
+      "ft" : 16384,
+      "iS" : 90530,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/supporters\/bruce.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/supporters\/chewy-banner.png" : {
+      "ft" : 32768,
+      "iS" : 62545,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/supporters\/chewy-banner.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/supporters\/sauces-logo.png" : {
+      "ft" : 32768,
+      "iS" : 43439,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/supporters\/sauces-logo.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/thanks\/blue.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -374,6 +447,22 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/deploy\/supporters.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/supporters.html",
+      "oF" : 0
+    },
+    "\/dev\/board.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/board.html",
+      "oF" : 2
+    },
     "\/dev\/contact.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -381,6 +470,14 @@
       "oA" : 0,
       "oAP" : "\/deploy\/contact.html",
       "oF" : 2
+    },
+    "\/dev\/content\/board-info.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/board-info.html",
+      "oF" : 0
     },
     "\/dev\/content\/contact-info.kit" : {
       "cB" : 0,
@@ -428,6 +525,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/index-outreach.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/supporters-info.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/supporters-info.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -631,6 +736,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_board-info.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_board-info.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/sections\/_contact-info.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -721,6 +841,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_supporters-info.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_supporters-info.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/styles.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -735,6 +870,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/supporters.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/supporters.html",
+      "oF" : 2
     },
     "\/gsap-bonus.tgz" : {
       "cB" : 0,
