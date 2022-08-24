@@ -1,3 +1,60 @@
 /* =============
     Footer
 ============= */
+footer{
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "f1 f1"
+    "f2 f2";
+    background-color: var(--lightBlue);
+    color: var(--darkBlue);
+
+    @include md{
+        grid-template-areas: "f1 f2 f3";
+    }
+
+    #copy{
+        grid-area: f1;
+        p{
+            font-size: rem-calc(12);
+        }
+    }
+
+    #validator{
+        grid-area: f2;
+
+        ul{
+            display: flex;
+            li{
+                // width: 50px;
+
+                img{
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    #social-links{
+        grid-area: f3;
+
+        ul{
+            display: flex;
+            justify-content: flex-end;
+
+            li{
+                margin-left: 16px;
+
+                a:link, a:visited{
+                    color: var(--darkBlue);
+                    transition: 0.25s;
+
+                    &:hover, &:active{
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}

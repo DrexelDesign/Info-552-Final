@@ -6,19 +6,19 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". index-outreach .";
-    padding: 24px 0;
+    margin: 24px 0;
 
     @include md {
-        padding: 48px 0;
+        margin: 48px 0;
     }
 
     @include lg {
-        padding: 56px 0;
+        margin: 56px 0;
     }
 
     @include xxl {
         grid-template-columns: auto 1440px auto;
-        padding: 64px 0;
+        // margin: 64px 0;
     }
 
     >div {
@@ -27,7 +27,24 @@
         gap: 16px;
 
         @include md {
-            grid-template-columns: 50% auto;
+            grid-template-columns: 60% auto;
+        }
+
+        @include xxl{
+            grid-template-columns: 70% auto;
+        }
+
+        #left-side{
+
+            #left-top{
+                padding-bottom: 24px;
+                @include md{
+                     display: grid;
+                     grid-template-columns: 50% auto;
+                     padding-bottom: 48px;
+                     
+                }
+            }
         }
 
 
@@ -48,35 +65,46 @@
         }
 
         #social-feeds {
+
+
+
             >div {
                 @include md {
                     display: grid;
                     grid-template-columns: 50% auto;
                     gap: 16px;
+                }
 
-                    #insta-facebook {
-                       
+                #insta-facebook {
 
-                        
+                    height: 60vh;
+                    overflow: scroll;
+                    margin-bottom: 16px;
 
-                        .insta-card {
-                            background-color: var(--grey);
-                            padding: 16px;
+                    @include md {
+                        height: 50vh;
+                        margin-bottom: 0px;
+                    }
 
-                            .social-icon{
-                                width: 30px;
-                            }
+                    .insta-card {
+                        background-color: var(--grey);
+                        padding: 16px;
+                        margin-bottom: 16px;
+                        border-radius: 8px;
 
-                            .post-pic {
-                                width: 100%;
-                            }
+                        .social-icon {
+                            height: 25px;
+                        }
+
+                        .post-pic {
+                            width: 100%;
                         }
 
                         ul {
                             display: flex;
 
                             li {
-                                margin-top: 16px;
+                                margin-top: 8px;
                                 margin-right: 24px;
 
                                 img {
@@ -84,12 +112,86 @@
                                 }
                             }
                         }
+
+                        p {
+                            font-size: rem-calc(14);
+                            margin: 0;
+                        }
                     }
 
-                    #twitter{
+
+                }
+
+                #twitter {
+
+                    height: 60vh;
+                    overflow: scroll;
+                    margin-bottom: 16px;
+
+                    @include md {
+                        height: 50vh;
+                        margin-bottom: 0px;
+                    }
+                  
+
+                    .twitter-card{
+                        display: flex;
+                        align-items: center;
+                        padding: 16px;
                         background-color: var(--grey);
-                    }
+                        border-radius: 8px;
+                        margin-bottom: 16px;
 
+                        .twitter-logo{
+                            margin-right: 16px;
+                        }
+                        p{
+                            font-size: rem-calc(14);
+                        }
+
+                        ul{
+                            display: flex;
+                            justify-content: flex-end;
+
+                            li{
+                                margin-left: 16px;
+                                img{
+                                    width: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        #right-side{
+
+            .card{
+                background-color: var(--grey);
+                padding: 16px;
+                border-radius: 8px;
+                display: grid;
+                gap: 16px;
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+
+                aside{
+                    display: flex;
+                    align-items: center;
+
+                    img{
+                        width: 100%;
+                        margin-bottom: 16px;
+
+                        @include xxl{
+                            width: 50px;
+                            
+                        }
+                    }
                 }
             }
         }

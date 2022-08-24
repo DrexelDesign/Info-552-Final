@@ -13,7 +13,7 @@ html {
 :root {
   --white: #fff;
   --black: #000;
-  --grey: #E7E7E7;
+  --grey: #F0F0F0;
   --red: #E63946;
   --cream: #F1FAEE;
   --lightBlue: #A8DADC;
@@ -374,7 +374,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
 }
@@ -383,6 +383,8 @@ h1, h2, h3, h4 {
   font-weight: 300;
   font-size: 1.875rem;
   margin-bottom: 16px;
+  color: var(--darkBlue);
+  font-family: "Comfortaa", cursive;
 }
 
 /* =============
@@ -539,12 +541,12 @@ header aside div {
 header aside div img {
   margin-right: 16px;
 }
-header aside div h1 {
+header aside div h2 {
   font-family: "Corben", cursive;
   font-weight: 400;
   font-size: 1.4375rem;
 }
-header aside div h2 {
+header aside div h3 {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
@@ -560,6 +562,52 @@ header #burger-container i {
 /* =============
     Footer
 ============= */
+footer {
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "f1 f1" "f2 f2";
+  background-color: var(--lightBlue);
+  color: var(--darkBlue);
+}
+@media (min-width: 768px) {
+  footer {
+    grid-template-areas: "f1 f2 f3";
+  }
+}
+footer #copy {
+  grid-area: f1;
+}
+footer #copy p {
+  font-size: 0.75rem;
+}
+footer #validator {
+  grid-area: f2;
+}
+footer #validator ul {
+  display: flex;
+}
+footer #validator ul li img {
+  width: 50px;
+}
+footer #social-links {
+  grid-area: f3;
+}
+footer #social-links ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer #social-links ul li {
+  margin-left: 16px;
+}
+footer #social-links ul li a:link, footer #social-links ul li a:visited {
+  color: var(--darkBlue);
+  transition: 0.25s;
+}
+footer #social-links ul li a:link:hover, footer #social-links ul li a:link:active, footer #social-links ul li a:visited:hover, footer #social-links ul li a:visited:active {
+  color: var(--white);
+}
+
 /* =============
     Index Hero
 ============= */
@@ -586,53 +634,53 @@ header #burger-container i {
   width: 100%;
   box-sizing: border-box;
 }
-#index-hero > div section h1 {
+#index-hero > div section h2 {
   color: var(--white);
   font-size: 1.25rem;
   font-weight: 400;
 }
 @media (min-width: 768px) {
-  #index-hero > div section h1 {
+  #index-hero > div section h2 {
     padding-left: 20%;
     padding-right: 20%;
     font-size: 1.875rem;
   }
 }
 @media (min-width: 1024px) {
-  #index-hero > div section h1 {
+  #index-hero > div section h2 {
     padding-left: 30%;
     padding-right: 30%;
     font-size: 2.5rem;
   }
 }
 @media (min-width: 1440px) {
-  #index-hero > div section h1 {
+  #index-hero > div section h2 {
     padding-left: 35%;
     padding-right: 35%;
   }
 }
-#index-hero > div section h2 {
+#index-hero > div section h3 {
   color: var(--white);
   font-size: 1.125rem;
   font-weight: 600;
   margin-top: 16px;
 }
 @media (min-width: 768px) {
-  #index-hero > div section h2 {
+  #index-hero > div section h3 {
     padding-left: 20%;
     padding-right: 20%;
     font-size: 1.5625rem;
   }
 }
 @media (min-width: 1024px) {
-  #index-hero > div section h2 {
+  #index-hero > div section h3 {
     padding-left: 30%;
     padding-right: 30%;
     font-size: 1.875rem;
   }
 }
 @media (min-width: 1440px) {
-  #index-hero > div section h2 {
+  #index-hero > div section h3 {
     padding-left: 35%;
     padding-right: 35%;
   }
@@ -645,36 +693,35 @@ header #burger-container i {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". index-about .";
-  padding: 24px 0;
+  padding: 24px 0 0;
 }
 @media (min-width: 768px) {
   #index-about {
     grid-template-columns: 15vw auto 15vw;
-    padding: 48px 0;
+    padding: 48px 0 0;
   }
 }
 @media (min-width: 1024px) {
   #index-about {
     grid-template-columns: 25vw auto 25vw;
-    padding: 56px 0;
+    padding: 56px 0 0;
   }
 }
 @media (min-width: 1440px) {
   #index-about {
     grid-template-columns: 35vw auto 35vw;
-    padding: 64px 0;
+    padding: 64px 0 0;
   }
 }
 #index-about section {
   grid-area: index-about;
   color: var(--darkBlue);
 }
+#index-about section p {
+  margin-bottom: 16px;
+}
 #index-about section div {
   display: flex;
-}
-#index-about section div h1 {
-  font-family: "Comfortaa", cursive;
-  font-weight: 300;
 }
 #index-about section div i {
   font-size: 1.875rem;
@@ -689,22 +736,22 @@ header #burger-container i {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". help .";
-  padding: 24px 0;
+  padding: 24px 0 0;
 }
 @media (min-width: 768px) {
   #help {
-    padding: 48px 0;
+    padding: 48px 0 0;
   }
 }
 @media (min-width: 1024px) {
   #help {
-    padding: 56px 0;
+    padding: 56px 0 0;
   }
 }
 @media (min-width: 1200px) {
   #help {
     grid-template-columns: auto 1200px auto;
-    padding: 64px 0;
+    padding: 64px 0 0;
   }
 }
 #help > div {
@@ -743,7 +790,7 @@ header #burger-container i {
   align-items: center;
   justify-content: center;
 }
-#help > div #goal div h1 {
+#help > div #goal div h2 {
   color: var(--cream);
 }
 #help > div #goal div img {
@@ -754,25 +801,25 @@ header #burger-container i {
     Index Gallery
 ============= */
 #index-gallery {
-  padding: 24px 0;
+  padding: 24px 0 0;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". gallery .";
 }
 @media (min-width: 768px) {
   #index-gallery {
-    padding: 48px 0;
+    padding: 48px 0 0;
   }
 }
 @media (min-width: 1024px) {
   #index-gallery {
-    padding: 56px 0;
+    padding: 56px 0 0;
   }
 }
 @media (min-width: 1200px) {
   #index-gallery {
     grid-template-columns: auto 1440px auto;
-    padding: 64px 0;
+    padding: 64px 0 0;
   }
 }
 #index-gallery > div {
@@ -824,22 +871,21 @@ header #burger-container i {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". index-outreach .";
-  padding: 24px 0;
+  margin: 24px 0;
 }
 @media (min-width: 768px) {
   #outreach {
-    padding: 48px 0;
+    margin: 48px 0;
   }
 }
 @media (min-width: 1024px) {
   #outreach {
-    padding: 56px 0;
+    margin: 56px 0;
   }
 }
 @media (min-width: 1440px) {
   #outreach {
     grid-template-columns: auto 1440px auto;
-    padding: 64px 0;
   }
 }
 #outreach > div {
@@ -849,7 +895,22 @@ header #burger-container i {
 }
 @media (min-width: 768px) {
   #outreach > div {
+    grid-template-columns: 60% auto;
+  }
+}
+@media (min-width: 1440px) {
+  #outreach > div {
+    grid-template-columns: 70% auto;
+  }
+}
+#outreach > div #left-side #left-top {
+  padding-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #outreach > div #left-side #left-top {
+    display: grid;
     grid-template-columns: 50% auto;
+    padding-bottom: 48px;
   }
 }
 #outreach > div .outreach-card > div {
@@ -869,27 +930,99 @@ header #burger-container i {
     grid-template-columns: 50% auto;
     gap: 16px;
   }
-  #outreach > div #social-feeds > div #insta-facebook .insta-card {
-    background-color: var(--grey);
-    padding: 16px;
+}
+#outreach > div #social-feeds > div #insta-facebook {
+  height: 60vh;
+  overflow: scroll;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #outreach > div #social-feeds > div #insta-facebook {
+    height: 50vh;
+    margin-bottom: 0px;
   }
-  #outreach > div #social-feeds > div #insta-facebook .insta-card .social-icon {
-    width: 30px;
-  }
-  #outreach > div #social-feeds > div #insta-facebook .insta-card .post-pic {
-    width: 100%;
-  }
-  #outreach > div #social-feeds > div #insta-facebook ul {
-    display: flex;
-  }
-  #outreach > div #social-feeds > div #insta-facebook ul li {
-    margin-top: 16px;
-    margin-right: 24px;
-  }
-  #outreach > div #social-feeds > div #insta-facebook ul li img {
-    width: 20px;
-  }
+}
+#outreach > div #social-feeds > div #insta-facebook .insta-card {
+  background-color: var(--grey);
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+#outreach > div #social-feeds > div #insta-facebook .insta-card .social-icon {
+  height: 25px;
+}
+#outreach > div #social-feeds > div #insta-facebook .insta-card .post-pic {
+  width: 100%;
+}
+#outreach > div #social-feeds > div #insta-facebook .insta-card ul {
+  display: flex;
+}
+#outreach > div #social-feeds > div #insta-facebook .insta-card ul li {
+  margin-top: 8px;
+  margin-right: 24px;
+}
+#outreach > div #social-feeds > div #insta-facebook .insta-card ul li img {
+  width: 20px;
+}
+#outreach > div #social-feeds > div #insta-facebook .insta-card p {
+  font-size: 0.875rem;
+  margin: 0;
+}
+#outreach > div #social-feeds > div #twitter {
+  height: 60vh;
+  overflow: scroll;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
   #outreach > div #social-feeds > div #twitter {
-    background-color: var(--grey);
+    height: 50vh;
+    margin-bottom: 0px;
+  }
+}
+#outreach > div #social-feeds > div #twitter .twitter-card {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--grey);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+#outreach > div #social-feeds > div #twitter .twitter-card .twitter-logo {
+  margin-right: 16px;
+}
+#outreach > div #social-feeds > div #twitter .twitter-card p {
+  font-size: 0.875rem;
+}
+#outreach > div #social-feeds > div #twitter .twitter-card ul {
+  display: flex;
+  justify-content: flex-end;
+}
+#outreach > div #social-feeds > div #twitter .twitter-card ul li {
+  margin-left: 16px;
+}
+#outreach > div #social-feeds > div #twitter .twitter-card ul li img {
+  width: 20px;
+}
+#outreach > div #right-side .card {
+  background-color: var(--grey);
+  padding: 16px;
+  border-radius: 8px;
+  display: grid;
+  gap: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+#outreach > div #right-side .card aside {
+  display: flex;
+  align-items: center;
+}
+#outreach > div #right-side .card aside img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+@media (min-width: 1440px) {
+  #outreach > div #right-side .card aside img {
+    width: 50px;
   }
 }

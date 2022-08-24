@@ -6,23 +6,23 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". help .";
-    padding: 24px 0;
+    padding: 24px 0 0;
 
 
     @include md{
       
-        padding: 48px 0;
+        padding: 48px 0 0;
     }
 
     @include lg{
        
-        padding: 56px 0;
+        padding: 56px 0 0;
     }
 
 
     @include xl{
         grid-template-columns: auto 1200px auto;
-        padding: 64px 0;
+        padding: 64px 0 0;
     }
 
     >div {
@@ -68,7 +68,7 @@
 
             div {
 
-                h1 {
+                h2 {
                     color: var(--cream);
                 }
 
