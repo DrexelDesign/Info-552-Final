@@ -106,3 +106,16 @@
         }
     }
 }
+
+
+.list-item-active{
+    
+    a:link, a:visited{
+        
+        color: var(--cream) !important;
+
+        &:hover, &:active{
+            color: var(--cream);
+        }
+    }
+}

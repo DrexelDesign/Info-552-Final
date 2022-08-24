@@ -1,0 +1,138 @@
+/* =============
+    Contact-Info
+============= */ 
+
+#contact{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". contact .";
+    padding: 24px 0;
+
+    @include md{
+        // grid-template-columns: 15vw auto 15vw;
+        padding: 48px 0;
+    }
+
+    @include lg{
+        // grid-template-columns: 25vw auto 25vw;
+        padding: 56px 0;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 1440px auto;
+        padding: 64px 0;
+    }
+
+    >div{
+        grid-area: contact;
+
+        @include md{
+            display: grid;
+            gap:16px;
+            grid-template-columns: 50% auto;
+        }
+
+        section{
+
+            padding-top: 24px;
+
+            form{
+                input{
+                    border: 1px solid var(--darkBlue);
+                    border-radius: none;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 16px 8px;
+                    margin-bottom: 24px;
+                }
+
+                textarea{
+                    border: 1px solid var(--darkBlue);
+                    border-radius: none;
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 16px 8px;
+                    height: 30vh;
+                    margin-bottom: 24px;
+                }
+
+                >div{
+                    display: flex;
+                    justify-content: flex-end;
+
+                    button{
+                        background-color: var(--red);
+                        border-radius: 0;
+                        padding: 16px;
+                        border: none;
+                        cursor: pointer;
+
+                        border-radius: 5px;
+                        color: var(--cream);
+                        transition: 0.25s;
+    
+                        &:hover, &:active{
+                            background-color: var(--blue);
+                            // color: var(--red);
+                        }
+                    }
+                }
+
+                
+            }
+
+            #slack{
+                background-color: var(--darkBlue);
+                padding: 24px;
+                margin-top: 24px;
+
+                @include xxl{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                h2{
+                    color: var(--cream);
+
+                    @include xxl{
+                        margin-right: 24px;
+                        margin-bottom: 0;
+                    }
+                }
+
+                a:link,a a:visited{
+                    background-color: var(--red);
+                    border-radius: 0;
+                    padding: 16px;
+                    border: none;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+                    color: var(--cream);
+                    transition: 0.25s;
+                    display: inline-flex;
+                    align-items: center;
+                    font-weight: 600;
+
+                    svg{
+                        height: 30px;
+                        fill: var(--cream);
+                        margin-right: 16px;
+                    }
+                }
+            }
+        }
+
+        aside{
+            background-image: url("../img/contact/contact-hero.jpg");
+            height: 30vh;
+            background-position: center;
+            background-size: cover;
+
+            @include md{
+                height: 70vh;
+            }
+        }
+    }
+}

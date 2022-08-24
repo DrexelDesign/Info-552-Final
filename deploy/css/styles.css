@@ -515,6 +515,13 @@ textarea {
   color: var(--red);
 }
 
+.list-item-active a:link, .list-item-active a:visited {
+  color: var(--cream) !important;
+}
+.list-item-active a:link:hover, .list-item-active a:link:active, .list-item-active a:visited:hover, .list-item-active a:visited:active {
+  color: var(--cream);
+}
+
 /* =============
     Header
 ============= */
@@ -562,6 +569,14 @@ header #burger-container i {
 /* =============
     Footer
 ============= */
+.footer-hidden {
+  display: none;
+}
+
+.footer-active {
+  display: block;
+}
+
 footer {
   padding: 16px;
   display: grid;
@@ -1024,5 +1039,129 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
 @media (min-width: 1440px) {
   #outreach > div #right-side .card aside img {
     width: 50px;
+  }
+}
+
+/* =============
+    Contact-Info
+============= */
+#contact {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". contact .";
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  #contact {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #contact {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #contact {
+    grid-template-columns: auto 1440px auto;
+    padding: 64px 0;
+  }
+}
+#contact > div {
+  grid-area: contact;
+}
+@media (min-width: 768px) {
+  #contact > div {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 50% auto;
+  }
+}
+#contact > div section {
+  padding-top: 24px;
+}
+#contact > div section form input {
+  border: 1px solid var(--darkBlue);
+  border-radius: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 8px;
+  margin-bottom: 24px;
+}
+#contact > div section form textarea {
+  border: 1px solid var(--darkBlue);
+  border-radius: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 8px;
+  height: 30vh;
+  margin-bottom: 24px;
+}
+#contact > div section form > div {
+  display: flex;
+  justify-content: flex-end;
+}
+#contact > div section form > div button {
+  background-color: var(--red);
+  border-radius: 0;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: var(--cream);
+  transition: 0.25s;
+}
+#contact > div section form > div button:hover, #contact > div section form > div button:active {
+  background-color: var(--blue);
+}
+#contact > div section #slack {
+  background-color: var(--darkBlue);
+  padding: 24px;
+  margin-top: 24px;
+}
+@media (min-width: 1440px) {
+  #contact > div section #slack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#contact > div section #slack h2 {
+  color: var(--cream);
+}
+@media (min-width: 1440px) {
+  #contact > div section #slack h2 {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+}
+#contact > div section #slack a:link, #contact > div section #slack a a:visited {
+  background-color: var(--red);
+  border-radius: 0;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: var(--cream);
+  transition: 0.25s;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+}
+#contact > div section #slack a:link svg, #contact > div section #slack a a:visited svg {
+  height: 30px;
+  fill: var(--cream);
+  margin-right: 16px;
+}
+#contact > div aside {
+  background-image: url("../img/contact/contact-hero.jpg");
+  height: 30vh;
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #contact > div aside {
+    height: 70vh;
   }
 }
