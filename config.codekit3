@@ -37,6 +37,84 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/board\/board-1.jpeg" : {
+      "ft" : 16384,
+      "iS" : 31646,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/board\/board-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/board\/board-2.jpeg" : {
+      "ft" : 16384,
+      "iS" : 32478,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/board\/board-2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/board\/board-3.jpeg" : {
+      "ft" : 16384,
+      "iS" : 26903,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/board\/board-3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/board\/board-4.jpeg" : {
+      "ft" : 16384,
+      "iS" : 30810,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/board\/board-4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/board\/board-5.jpeg" : {
+      "ft" : 16384,
+      "iS" : 29081,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/board\/board-5.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/board\/board-6.jpg" : {
+      "ft" : 16384,
+      "iS" : 31631,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/board\/board-6.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/contact\/contact-hero.jpg" : {
       "ft" : 16384,
       "iS" : 209566,
@@ -535,6 +613,14 @@
       "oAP" : "\/dev\/content\/supporters-info.html",
       "oF" : 0
     },
+    "\/dev\/content\/testimonials-info.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/testimonials-info.html",
+      "oF" : 0
+    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -877,6 +963,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/supporters.html",
+      "oF" : 2
+    },
+    "\/dev\/testimonials.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/testimonials.html",
       "oF" : 2
     },
     "\/gsap-bonus.tgz" : {

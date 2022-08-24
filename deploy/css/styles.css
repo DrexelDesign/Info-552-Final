@@ -1428,3 +1428,167 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
 #supporters > div #support-thanks p span {
   font-weight: 600;
 }
+
+/* =============
+    Board-Info
+============= */
+#board {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". board .";
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  #board {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #board {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #board {
+    grid-template-columns: auto 1440px auto;
+    padding: 64px 0;
+  }
+}
+#board > div {
+  grid-area: board;
+}
+#board > div #board-header {
+  display: flex;
+}
+#board > div #board-header i {
+  color: var(--blue);
+  margin-right: 16px;
+  font-size: 1.875rem;
+}
+#board > div #quote {
+  background-color: var(--grey);
+  padding: 16px;
+  margin: 24px 0;
+}
+@media (min-width: 768px) {
+  #board > div #quote {
+    margin: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #board > div #quote {
+    margin: 56px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #board > div #quote {
+    margin: 64px 0 0;
+  }
+}
+@media (min-width: 768px) {
+  #board > div #quote {
+    display: grid;
+    grid-template-columns: auto 70% auto;
+    grid-template-areas: ". quote .";
+  }
+}
+@media (min-width: 1024px) {
+  #board > div #quote {
+    grid-template-columns: auto 60% auto;
+  }
+}
+@media (min-width: 768px) {
+  #board > div #quote > div {
+    grid-area: quote;
+  }
+}
+#board > div #quote > div p {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+}
+#board > div #quote > div div {
+  display: flex;
+}
+#board > div #quote > div div i {
+  margin-right: 16px;
+}
+#board > div #members ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #board > div #members ul {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #board > div #members ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1440px) {
+  #board > div #members ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#board > div #members ul li {
+  background-color: var(--darkBlue);
+  color: var(--cream);
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 150px;
+}
+@media (min-width: 768px) {
+  #board > div #members ul li {
+    grid-template-columns: 50% auto;
+    grid-template-rows: 200px;
+  }
+}
+#board > div #members ul li aside {
+  background-position: center;
+  background-size: center;
+  height: 100%;
+}
+#board > div #members ul li div {
+  padding: 16px;
+}
+#board > div #members ul li div h3 {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+#board > div #members ul li div h4 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+#board > div #members ul li div hr {
+  border: none;
+  height: 1px;
+  background-color: var(--cream);
+}
+#board > div #members ul li:nth-child(1) aside {
+  background-image: url("../img/board/board-1.jpeg");
+}
+#board > div #members ul li:nth-child(2) aside {
+  background-image: url("../img/board/board-2.jpeg");
+}
+#board > div #members ul li:nth-child(3) aside {
+  background-image: url("../img/board/board-3.jpeg");
+}
+#board > div #members ul li:nth-child(4) aside {
+  background-image: url("../img/board/board-4.jpeg");
+}
+#board > div #members ul li:nth-child(5) aside {
+  background-image: url("../img/board/board-5.jpeg");
+}
+#board > div #members ul li:nth-child(6) aside {
+  background-image: url("../img/board/board-6.jpeg");
+}
+#board > div #members ul li:nth-child(7) aside {
+  background-image: url("../img/board/board-7.jpeg");
+}
+#board > div #members ul li:nth-child(6) aside {
+  background-image: url("../img/board/board-6.jpg");
+}
+#board > div #members ul li:nth-child(7) aside {
+  background-image: url("../img/board/board-7.jpeg");
+}
