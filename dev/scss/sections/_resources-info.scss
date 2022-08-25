@@ -26,28 +26,106 @@
 
         @include md{
             display: grid;
+            gap: 16px;
+            grid-template-columns: 30% auto;
+        }
+
+        @include xxl{
             grid-template-columns: 20% auto;
         }
 
         nav{
-            height: 100%;
-            position: relative;
+
+            @include md{
+                height: 100%;
+            }
+           
 
             ul{
 
                 @include md{
                     position: sticky;
-                    top: 0;
+                    top: 16px;
                     left:0;
-                }
-                
 
+                    li{
+                        margin-top: 16px;
+                        a:link,a:visited{
+                            color: var(--blue);
+                            transition: 0.25s;
+                            
+
+                            i{
+                                margin-right: 8px;
+                            }
+
+                            &:hover, &:active{
+                                color: var(--darkBlue);
+                            }
+                        }
+                    }
+                }
             }
 
         }
 
         div{
 
+            p{
+                margin-bottom: 16px;
+            }
+            #callout{
+                margin-top: 24px;
+                background-color: var(--grey);
+                padding: 16px;
+
+                p{
+                    margin-top: 8px;
+                    span{
+                        font-style: italic;
+                    }
+                    i{
+                        color: var(--red);
+                        margin-right: 8px;
+                    }
+                }
+
+                #quote{
+                    font-weight: 700;
+                }
+            }
+
+            #what{
+                margin-top: 24px;
+            }
+
+            #warning{
+                margin-top: 24px;
+
+                img{
+                    width: 100%;
+                    margin-bottom: 16px;
+                }
+
+                h1{
+                    margin-bottom: 0px;
+                }
+
+                h2{
+                    font-weight: 400;
+                }
+            }
+
+            #check{
+                margin-top: 24px;
+
+                ul{
+                    padding-left: 32px;
+                    li{
+                        list-style: disc;
+                    }
+                }
+            }
         }
     }
 

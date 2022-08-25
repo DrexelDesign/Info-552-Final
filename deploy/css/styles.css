@@ -581,6 +581,7 @@ textarea {
   }
 }
 .dropdown .row ul {
+  transition: 0.25s;
   display: block !important;
   height: 100%;
   padding: 16px;
@@ -604,6 +605,7 @@ textarea {
   width: 100%;
 }
 .dropdown .row #column-2 > div {
+  background-position: center 20%;
   background-image: url("../img/menu/mega-1.jpg");
 }
 .dropdown .row #column-3 {
@@ -624,6 +626,7 @@ textarea {
 }
 
 .dropdown-content {
+  transition: 0.25s;
   display: none;
   position: absolute;
   background-color: var(--lightBlue);
@@ -1260,7 +1263,7 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
     margin-bottom: 0;
   }
 }
-#contact > div section #slack a:link, #contact > div section #slack a a:visited {
+#contact > div section #slack a:link, #contact > div section #slack a:visited {
   background-color: var(--red);
   border-radius: 0;
   padding: 16px;
@@ -1274,7 +1277,7 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
   align-items: center;
   font-weight: 600;
 }
-#contact > div section #slack a:link svg, #contact > div section #slack a a:visited svg {
+#contact > div section #slack a:link svg, #contact > div section #slack a:visited svg {
   height: 30px;
   fill: var(--cream);
   margin-right: 16px;
@@ -1714,17 +1717,83 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
 @media (min-width: 768px) {
   #resources > div {
     display: grid;
+    gap: 16px;
+    grid-template-columns: 30% auto;
+  }
+}
+@media (min-width: 1440px) {
+  #resources > div {
     grid-template-columns: 20% auto;
   }
 }
-#resources > div nav {
-  height: 100%;
-  position: relative;
+@media (min-width: 768px) {
+  #resources > div nav {
+    height: 100%;
+  }
 }
 @media (min-width: 768px) {
   #resources > div nav ul {
     position: sticky;
-    top: 0;
+    top: 16px;
     left: 0;
   }
+  #resources > div nav ul li {
+    margin-top: 16px;
+  }
+  #resources > div nav ul li a:link, #resources > div nav ul li a:visited {
+    color: var(--blue);
+    transition: 0.25s;
+  }
+  #resources > div nav ul li a:link i, #resources > div nav ul li a:visited i {
+    margin-right: 8px;
+  }
+  #resources > div nav ul li a:link:hover, #resources > div nav ul li a:link:active, #resources > div nav ul li a:visited:hover, #resources > div nav ul li a:visited:active {
+    color: var(--darkBlue);
+  }
+}
+#resources > div div p {
+  margin-bottom: 16px;
+}
+#resources > div div #callout {
+  margin-top: 24px;
+  background-color: var(--grey);
+  padding: 16px;
+}
+#resources > div div #callout p {
+  margin-top: 8px;
+}
+#resources > div div #callout p span {
+  font-style: italic;
+}
+#resources > div div #callout p i {
+  color: var(--red);
+  margin-right: 8px;
+}
+#resources > div div #callout #quote {
+  font-weight: 700;
+}
+#resources > div div #what {
+  margin-top: 24px;
+}
+#resources > div div #warning {
+  margin-top: 24px;
+}
+#resources > div div #warning img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+#resources > div div #warning h1 {
+  margin-bottom: 0px;
+}
+#resources > div div #warning h2 {
+  font-weight: 400;
+}
+#resources > div div #check {
+  margin-top: 24px;
+}
+#resources > div div #check ul {
+  padding-left: 32px;
+}
+#resources > div div #check ul li {
+  list-style: disc;
 }
