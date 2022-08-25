@@ -333,6 +333,10 @@ template {
 /* =============
     Base
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -1591,4 +1595,136 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
 }
 #board > div #members ul li:nth-child(7) aside {
   background-image: url("../img/board/board-7.jpeg");
+}
+
+/* =============
+    Testimonial-Info
+============= */
+#testimonial {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". testimonial .";
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  #testimonial {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #testimonial {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #testimonial {
+    grid-template-columns: auto 1440px auto;
+    padding: 64px 0;
+  }
+}
+#testimonial > div {
+  grid-area: testimonial;
+}
+@media (min-width: 768px) {
+  #testimonial > div #posting {
+    display: grid;
+    grid-template-columns: 30% auto;
+  }
+  #testimonial > div #posting aside {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #testimonial > div #posting aside div {
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background-image: url("../img/testimonials/Jessie-2-1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  #testimonial > div #posting aside div {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  #testimonial > div #posting p {
+    margin-bottom: 16px;
+  }
+}
+
+#flipbook {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". flip .";
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  #flipbook {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #flipbook {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #flipbook {
+    grid-template-columns: auto 1440px auto;
+    padding: 64px 0;
+  }
+}
+#flipbook > div {
+  grid-area: flip;
+}
+
+/* =============
+    Resources-Info
+============= */
+#resources {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". resources .";
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  #resources {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #resources {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #resources {
+    grid-template-columns: auto 1440px auto;
+    padding: 64px 0;
+  }
+}
+#resources > div {
+  grid-area: resources;
+}
+@media (min-width: 768px) {
+  #resources > div {
+    display: grid;
+    grid-template-columns: 20% auto;
+  }
+}
+#resources > div nav {
+  height: 100%;
+  position: relative;
+}
+@media (min-width: 768px) {
+  #resources > div nav ul {
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
 }

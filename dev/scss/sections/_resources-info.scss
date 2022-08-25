@@ -1,0 +1,54 @@
+/* =============
+    Resources-Info
+============= */
+
+#resources {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". resources .";
+    padding: 24px 0;
+
+    @include md {
+        padding: 48px 0;
+    }
+
+    @include lg {
+        padding: 56px 0;
+    }
+
+    @include xxl {
+        grid-template-columns: auto 1440px auto;
+        padding: 64px 0;
+    }
+
+    >div {
+        grid-area: resources;
+
+        @include md{
+            display: grid;
+            grid-template-columns: 20% auto;
+        }
+
+        nav{
+            height: 100%;
+            position: relative;
+
+            ul{
+
+                @include md{
+                    position: sticky;
+                    top: 0;
+                    left:0;
+                }
+                
+
+            }
+
+        }
+
+        div{
+
+        }
+    }
+
+}

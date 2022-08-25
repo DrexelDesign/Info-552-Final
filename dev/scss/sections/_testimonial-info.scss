@@ -1,0 +1,86 @@
+/* =============
+    Testimonial-Info
+============= */
+
+#testimonial {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". testimonial .";
+    padding: 24px 0;
+
+    @include md {
+        padding: 48px 0;
+    }
+
+    @include lg {
+        padding: 56px 0;
+    }
+
+    @include xxl {
+        grid-template-columns: auto 1440px auto;
+        padding: 64px 0;
+    }
+
+    >div {
+        grid-area: testimonial;
+
+        #posting{
+            @include md{
+                display: grid;
+                grid-template-columns: 30% auto;
+
+                aside{
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    div{
+                        height: 200px;
+                        width: 200px;
+                        border-radius: 100%;
+                        background-image: url("../img/testimonials/Jessie-2-1.jpg");
+                        background-size: cover;
+                        background-position: center;
+
+                        @include md{
+                            height: 300px;
+                            width: 300px;
+                        }
+                    }
+                }
+
+                p{
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+    }
+
+}
+
+#flipbook{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". flip .";
+    padding: 24px 0;
+
+    @include md {
+        padding: 48px 0;
+    }
+
+    @include lg {
+        padding: 56px 0;
+    }
+
+    @include xxl {
+        grid-template-columns: auto 1440px auto;
+        padding: 64px 0;
+    }
+
+    >div {
+        grid-area: flip;
+
+    }
+}

@@ -447,6 +447,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/testimonials\/Jessie-2-1.jpg" : {
+      "ft" : 16384,
+      "iS" : 23103,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/testimonials\/Jessie-2-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/thanks\/blue.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -533,6 +546,14 @@
       "oAP" : "\/deploy\/supporters.html",
       "oF" : 0
     },
+    "\/deploy\/testimonials.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/testimonials.html",
+      "oF" : 0
+    },
     "\/dev\/board.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -605,6 +626,14 @@
       "oAP" : "\/dev\/content\/index-outreach.html",
       "oF" : 0
     },
+    "\/dev\/content\/resources-info.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/resources-info.html",
+      "oF" : 0
+    },
     "\/dev\/content\/supporters-info.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -671,6 +700,14 @@
       "oF" : 2,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/dev\/resources.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/resources.html",
+      "oF" : 2
     },
     "\/dev\/scss\/base\/_base.scss" : {
       "aP" : 0,
@@ -927,6 +964,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_resources-info.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_resources-info.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/sections\/_supporters-info.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -937,6 +989,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_supporters-info.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_testimonial-info.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_testimonial-info.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
