@@ -1733,19 +1733,19 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
     top: 16px;
     left: 0;
   }
-  #resources > div nav ul li {
-    margin-top: 16px;
-  }
-  #resources > div nav ul li a:link, #resources > div nav ul li a:visited {
-    color: var(--blue);
-    transition: 0.25s;
-  }
-  #resources > div nav ul li a:link i, #resources > div nav ul li a:visited i {
-    margin-right: 8px;
-  }
-  #resources > div nav ul li a:link:hover, #resources > div nav ul li a:link:active, #resources > div nav ul li a:visited:hover, #resources > div nav ul li a:visited:active {
-    color: var(--darkBlue);
-  }
+}
+#resources > div nav ul li {
+  margin-top: 16px;
+}
+#resources > div nav ul li a:link, #resources > div nav ul li a:visited {
+  color: var(--blue);
+  transition: 0.25s;
+}
+#resources > div nav ul li a:link i, #resources > div nav ul li a:visited i {
+  margin-right: 8px;
+}
+#resources > div nav ul li a:link:hover, #resources > div nav ul li a:link:active, #resources > div nav ul li a:visited:hover, #resources > div nav ul li a:visited:active {
+  color: var(--darkBlue);
 }
 #resources > div div p {
   margin-bottom: 16px;
@@ -1885,4 +1885,65 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
 #shop > div #product ul li:nth-child(4) div {
   background-position: center 20%;
   background-image: url("../img/shop/shirts.jpg");
+}
+
+/* =============
+    Angels-Info
+============= */
+#angels-hero {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/angels/hero.jpg");
+  height: 50vh;
+}
+
+#angels {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". angel .";
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  #angels {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #angels {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #angels {
+    grid-template-columns: auto 1440px auto;
+    padding: 64px 0;
+  }
+}
+#angels > div {
+  grid-area: angel;
+  display: grid;
+  gap: 16px;
+  color: var(--darkBlue);
+}
+@media (min-width: 768px) {
+  #angels > div {
+    grid-template-columns: 40% auto;
+  }
+}
+#angels > div aside {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  background-image: url("../img/angels/rainbow.jpg");
+}
+#angels > div section h1 i {
+  margin-left: 8px;
+  color: var(--blue);
+}
+#angels > div section h3 {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+#angels > div section p {
+  margin-bottom: 16px;
 }

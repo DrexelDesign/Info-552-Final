@@ -47,24 +47,25 @@
                     position: sticky;
                     top: 16px;
                     left:0;
+                }
 
-                    li{
-                        margin-top: 16px;
-                        a:link,a:visited{
-                            color: var(--blue);
-                            transition: 0.25s;
-                            
+                li{
+                    margin-top: 16px;
+                    a:link,a:visited{
+                        color: var(--blue);
+                        transition: 0.25s;
+                        
 
-                            i{
-                                margin-right: 8px;
-                            }
+                        i{
+                            margin-right: 8px;
+                        }
 
-                            &:hover, &:active{
-                                color: var(--darkBlue);
-                            }
+                        &:hover, &:active{
+                            color: var(--darkBlue);
                         }
                     }
                 }
+            
             }
 
         }
