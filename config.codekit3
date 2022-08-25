@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34418",
   "files" : {
+    "\/deploy\/angels.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/angels.html",
+      "oF" : 0
+    },
     "\/deploy\/board.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -37,9 +45,9 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/board\/board-1.jpeg" : {
+    "\/deploy\/img\/board\/board-1.jpg" : {
       "ft" : 16384,
-      "iS" : 31646,
+      "iS" : 124979,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/board\/board-1.jpg",
@@ -50,9 +58,9 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/board\/board-2.jpeg" : {
+    "\/deploy\/img\/board\/board-2.jpg" : {
       "ft" : 16384,
-      "iS" : 32478,
+      "iS" : 130795,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/board\/board-2.jpg",
@@ -63,9 +71,9 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/board\/board-3.jpeg" : {
+    "\/deploy\/img\/board\/board-3.jpg" : {
       "ft" : 16384,
-      "iS" : 26903,
+      "iS" : 113985,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/board\/board-3.jpg",
@@ -76,9 +84,9 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/board\/board-4.jpeg" : {
+    "\/deploy\/img\/board\/board-4.jpg" : {
       "ft" : 16384,
-      "iS" : 30810,
+      "iS" : 123027,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/board\/board-4.jpg",
@@ -89,9 +97,9 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/board\/board-5.jpeg" : {
+    "\/deploy\/img\/board\/board-5.jpg" : {
       "ft" : 16384,
-      "iS" : 29081,
+      "iS" : 115360,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/board\/board-5.jpg",
@@ -104,7 +112,7 @@
     },
     "\/deploy\/img\/board\/board-6.jpg" : {
       "ft" : 16384,
-      "iS" : 31631,
+      "iS" : 118366,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/board\/board-6.jpg",
@@ -305,6 +313,58 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/resources\/hero-1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/shop\/bandana.jpg" : {
+      "ft" : 16384,
+      "iS" : 126907,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/shop\/bandana.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/shop\/bracelet.jpg" : {
+      "ft" : 16384,
+      "iS" : 123321,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/shop\/bracelet.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/shop\/magnet.jpg" : {
+      "ft" : 16384,
+      "iS" : 234077,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/shop\/magnet.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/shop\/shirts.jpg" : {
+      "ft" : 16384,
+      "iS" : 72827,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/shop\/shirts.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -559,6 +619,14 @@
       "oAP" : "\/deploy\/resources.html",
       "oF" : 0
     },
+    "\/deploy\/shop.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/shop.html",
+      "oF" : 0
+    },
     "\/deploy\/supporters.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -575,6 +643,14 @@
       "oAP" : "\/deploy\/testimonials.html",
       "oF" : 0
     },
+    "\/dev\/angels.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/angels.html",
+      "oF" : 2
+    },
     "\/dev\/board.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -590,6 +666,14 @@
       "oA" : 0,
       "oAP" : "\/deploy\/contact.html",
       "oF" : 2
+    },
+    "\/dev\/content\/angels-info.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/content\/angels-info.html",
+      "oF" : 0
     },
     "\/dev\/content\/board-info.kit" : {
       "cB" : 0,
@@ -653,6 +737,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/resources-info.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/shop-info.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/shop-info.html",
       "oF" : 0
     },
     "\/dev\/content\/supporters-info.kit" : {
@@ -1000,6 +1092,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/sections\/_shop-info.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_shop-info.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/sections\/_supporters-info.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1044,6 +1151,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/shop.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/shop.html",
+      "oF" : 2
     },
     "\/dev\/supporters.kit" : {
       "cB" : 0,

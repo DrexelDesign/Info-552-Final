@@ -1535,7 +1535,7 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
 }
 @media (min-width: 1440px) {
   #board > div #members ul {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 #board > div #members ul li {
@@ -1573,31 +1573,27 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
   background-color: var(--cream);
 }
 #board > div #members ul li:nth-child(1) aside {
-  background-image: url("../img/board/board-1.jpeg");
+  background-image: url("../img/board/board-1.jpg");
 }
 #board > div #members ul li:nth-child(2) aside {
-  background-image: url("../img/board/board-2.jpeg");
+  background-image: url("../img/board/board-2.jpg");
 }
 #board > div #members ul li:nth-child(3) aside {
-  background-image: url("../img/board/board-3.jpeg");
+  background-position: left center;
+  background-image: url("../img/board/board-3.jpg");
 }
 #board > div #members ul li:nth-child(4) aside {
-  background-image: url("../img/board/board-4.jpeg");
+  background-image: url("../img/board/board-4.jpg");
 }
 #board > div #members ul li:nth-child(5) aside {
-  background-image: url("../img/board/board-5.jpeg");
+  background-image: url("../img/board/board-5.jpg");
 }
 #board > div #members ul li:nth-child(6) aside {
-  background-image: url("../img/board/board-6.jpeg");
-}
-#board > div #members ul li:nth-child(7) aside {
-  background-image: url("../img/board/board-7.jpeg");
-}
-#board > div #members ul li:nth-child(6) aside {
+  background-position: left top;
   background-image: url("../img/board/board-6.jpg");
 }
 #board > div #members ul li:nth-child(7) aside {
-  background-image: url("../img/board/board-7.jpeg");
+  background-image: url("../img/board/board-5.jpg");
 }
 
 /* =============
@@ -1796,4 +1792,97 @@ footer #social-links ul li a:link:hover, footer #social-links ul li a:link:activ
 }
 #resources > div div #check ul li {
   list-style: disc;
+}
+
+/* =============
+    Shop-Info
+============= */
+#shop {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". shop .";
+  padding: 24px 0;
+}
+@media (min-width: 768px) {
+  #shop {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  #shop {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1440px) {
+  #shop {
+    grid-template-columns: auto 1440px auto;
+    padding: 64px 0;
+  }
+}
+#shop > div {
+  grid-area: shop;
+}
+#shop > div #product ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #shop > div #product ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  #shop > div #product ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#shop > div #product ul li {
+  padding: 16px;
+  background-color: var(--grey);
+}
+#shop > div #product ul li div {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 16px;
+}
+#shop > div #product ul li h2 {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+#shop > div #product ul li h3 {
+  font-weight: 600;
+}
+#shop > div #product ul li button {
+  border: none;
+  background-color: var(--red);
+  color: var(--cream);
+  transition: 0.25s;
+  padding: 12px 16px;
+  margin-top: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#shop > div #product ul li button:hover {
+  background-color: var(--cream);
+  color: var(--red);
+}
+#shop > div #product ul li button i {
+  margin-right: 8px;
+}
+#shop > div #product ul li:nth-child(1) div {
+  background-position: center 20%;
+  background-image: url("../img/shop/bandana.jpg");
+}
+#shop > div #product ul li:nth-child(2) div {
+  background-position: center 20%;
+  background-image: url("../img/shop/magnet.jpg");
+}
+#shop > div #product ul li:nth-child(3) div {
+  background-position: center 20%;
+  background-image: url("../img/shop/bracelet.jpg");
+}
+#shop > div #product ul li:nth-child(4) div {
+  background-position: center 20%;
+  background-image: url("../img/shop/shirts.jpg");
 }
